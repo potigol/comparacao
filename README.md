@@ -47,11 +47,56 @@ Comparação da linguagem **Potigol** com outras linguagens.
 | Java    | `x = 10;` | *não tem* | *não tem* |
 | Scala   | `x = 10` | *não tem* | *não tem* |
 
-### Modelo
+### Aritimática e Lógica
 
-| Linguagem | Comando | Comando | Comando |
-| --- | --- | --- | --- |
-| Potigol | `` | `` | `` |
-| Python  | `` | `` | `` |
-| Java    | `` | `` | `` |
-| Scala   | `` | `` | `` |
+#### Valores lógicos
+
+| Linguagem | Valores            | Operadores lógicos | Operadores relacionais |
+|-----------|--------------------|--------------------|------------------------|
+| Potigol   | `verdadeiro falso` | `e ou não`         | `== <> > < >= <=`      |
+| Python    | ``                 | ``                 | ``                     |
+| Java      | ``                 | ``                 | ``                     |
+| Scala     | ``                 | ``                 | ``                     |
+
+### Operações Aritiméticas
+
+| Linguagem | Operadores aritiméticos | Potenciação | Raiz |
+|-----------|-------------------------|-------------|---------------|
+| Potigol   | `+ - * / div mod`       | `^`         | `raiz(2.0)` <br> `raiz(2.0, 2)` |
+| Python    | ``                      | ``          | ``            |
+| Java      | ``                      | ``          | ``            |
+| Scala     | ``                      | ``          | ``            |
+
+
+#### Operações Matemáticas
+
+| Linguagem | Trigonometria | Aleatório | Absoluto |
+|-----------|---------|---------|---------|
+| Potigol   | `sen cos tg arcsen arccos arctg` | `aleatório(10)` <br> `aleatório(1,10)` <br> `aleatório(["a","e","i","o","u"])` | `abs(-2)`      |
+| Python    | ``      | ``      | ``      |
+| Java      | ``      | ``      | ``      |
+| Scala     | ``      | ``      | ``      |
+
+### Texto
+
+| Linguagem | Literal | Quebra de linha | Interpolação |
+|-----------|---------|---------|---------|
+| Potigol   | `"texto"` | `"Isto é` <br> `um texto"`      | `x, y = 10, 20` <br> `"A soma {x} + {y} = {x + y}."`      |
+| Python    | ``      | ``      | ``      |
+| Java      | ``      | ``      | ``      |
+| Scala     | ``      | ``      | ``      |
+
+| Linguagem | Concatenação | Replicar | Maiúsculo / Minúsculo |
+|-----------|---------|---------|---------|
+| Potigol   | `"Olá " + "mundo"` | `"-" * 20` | `"Ola".maiúsculo` <br> `"Ola".minúsculo`      |
+| Python    | ``      | ``      | ``      |
+| Java      | ``      | ``      | ``      |
+| Scala     | ``      | ``      | ``      |
+
+| Linguagem | Parte | Replicar | Maiúsculo / Minúsculo |
+|-----------|---------|---------|---------|
+| Potigol   | `ola = "Olá mundo".pegue(3)` <br> `mundo = "Olá Mundo".descarte(4)` | `"-" * 20` | `"Ola".maiúsculo` <br> `"Ola".minúsculo`      |
+| Python    | ``      | ``      | ``      |
+| Java      | ``      | ``      | ``      |
+| Scala     | ``      | ``      | ``      |
+
