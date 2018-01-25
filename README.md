@@ -127,7 +127,7 @@ Comparação da linguagem **Potigol** com outras linguagens.
 
 | Linguagem | Definição linha | Definição bloco | Aplicação |
 |-----------|---------|---------|---------|
-| Potigol   | `soma(a, b: Inteiro) = a + b` <br> <br> `pos(s: Texto, n: Inteiro) = s[n]` | `soma(a, b: Inteiro)` <br> `  c = a + b` <br> `  retorne c` <br> `fim` <br> <br> `fat(n: Inteiro): Inteiro` <br> `  a = se n>1 então fat(n-1) senão 1 fim` <br> `retorne c` <br> `fim` | `soma(2, 3)` |
+| Potigol   | `soma(a, b: Inteiro) = a + b` <br> <br> `pos(s: Texto, n: Inteiro) = s[n]` | `soma(a, b: Inteiro)` <br> `c = a + b` <br> `  retorne c` <br> `fim` <br> <br> `fat(n: Inteiro): Inteiro` <br> `a = se n>1 então fat(n-1) senão 1 fim` <br> `retorne c` <br> `fim` | `soma(2, 3)` |
 | Python    |      |       |       |
 | Java      |      |       |       |
 | Scala     |      |       |       |
