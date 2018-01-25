@@ -93,10 +93,89 @@ Comparação da linguagem **Potigol** com outras linguagens.
 | Java      | ``      | ``      | ``      |
 | Scala     | ``      | ``      | ``      |
 
-| Linguagem | Parte | Replicar | Maiúsculo / Minúsculo |
+| Linguagem | Partes | Tamanho | Elementos |
 |-----------|---------|---------|---------|
-| Potigol   | `ola = "Olá mundo".pegue(3)` <br> `mundo = "Olá Mundo".descarte(4)` | `"-" * 20` | `"Ola".maiúsculo` <br> `"Ola".minúsculo`      |
+| Potigol   | `ola = "Olá mundo".pegue(3)` <br> `mundo = "Olá Mundo".descarte(4)` | `"texto".tamanho` | `a = "Olá mundo"` <br> `a[1] # 'O'` |
 | Python    | ``      | ``      | ``      |
 | Java      | ``      | ``      | ``      |
 | Scala     | ``      | ``      | ``      |
+
+### Listas
+
+| Linguagem | Literal | Preenchida |Tamanho | Vazia
+|-----------|---------|---------|---------|---------|
+| Potigol   | `a = [1, 2, 3, 4]` |`a = Lista(10, 0)`| `a.tamanho` | `a == []`   |
+| Python    | ``      |  `` | `` | `` |
+| Java      | ``      |  `` | ``      | `` |
+| Scala     | ``      |  `` | ``      | `` |
+
+| Linguagem | Ordenar | Inverter | Unir |
+|-----------|---------|---------|---------|
+| Potigol   | `[2, 3, 1, 4].ordene` |`[2, 3, 1, 4].inverta` | `[2, 3] +[1, 4]` |
+| Python    | ``      | ``      | ``      |
+| Java      | ``      | ``      | ``      |
+| Scala     | ``      | ``      | ``      |
+
+| Linguagem | Mapeamento | Filtro | Redução |
+|-----------|---------|---------|---------|
+| Potigol   | `a = [1, 2, 3, 4]`<br>`a.mapeie(n => n * 2)`      |`a.selecione(n => n mod 2 ==0)` | `a.reduza(0)((n,m) => n + m)` |
+| Python    | ``      | ``      | ``      |
+| Java      | ``      | ``      | ``      |
+| Scala     | ``      | ``      | ``      |
+
+### Função
+
+| Linguagem | Definição linha | Definição bloco | Aplicação |
+|-----------|---------|---------|---------|
+| Potigol   | `soma(a, b: Inteiro) = a + b` <br><br> `pos(s: Texto, n: Inteiro) = s[n]`| `soma(a,b: Inteiro)`<br>`  c = a + b` <br> `  retorne c`<br>`fim`<br><br>`fat(n: Inteiro): Inteiro`<br>`  a = se n>1 então fat(n-1) senão 1 fim` <br>`retorne c`<br> `fim`      | `soma(2, 3)`      |
+| Python    | ``      | ``      | ``      |
+| Java      | ``      | ``      | ``      |
+| Scala     | ``      | ``      | ``      |
+
+#### Funções anônimas
+
+| Linguagem | Literal | Invocação | Função como valor |
+|-----------|---------|---------|---------|
+| Potigol   | `(a, b: Inteiro) => a + b` | `((a, b: Inteiro) => a + b)(2,3)`      | `soma = (a, b: Inteiro) => a + b`      |
+| Python    | ``      | ``      | ``      |
+| Java      | ``      | ``      | ``      |
+| Scala     | ``      | ``      | ``      |
+
+### Instruções de Controle
+
+| Linguagem | Se | Escolha |
+|-----------|---------|---------|
+| Potigol   | `se n==0 então`<br>` escreva "nenhum"`<br>`senãose n==1 então`<br> `escreva "um"`<br>`senão`<br>` escreva "vários"`<br>`fim`      | `escolha n`<br>` caso 0 => escreva "nenhum"`<br>` caso 1 => escreva "um"`<br>`caso _ => escreva "vários"`<br>`fim`      |
+| Python    | ``      | ``      |
+| Java      | ``      | ``      |
+| Scala     | ``      | ``      |
+
+#### Repetição
+
+| Linguagem | Para | Enquanto |
+|-----------|---------|---------|
+| Potigol   | `para i de 1 até 10 faça`<br>` escreva i`<br>`fim` <br><br> `para i de 1 até 10 passo 2 faça`<br>` escreva i`<br>`fim`| `var i := 1`<br>`enquanto i <= 10 faça`<br>`  escreva "i"`<br>`  i  := i + 1` <br> `fim`      |
+| Python    | ``      | ``      |
+| Java      | ``      | ``      |
+| Scala     | ``      | ``      |
+
+### Registro
+
+| Linguagem | Definição | Uso |
+|-----------|---------|---------|
+| Potigol   | `tipo Pessoa` <br> `  nome, email: Texto` <br> `var telefone: Texto`<br>`fim`      | `joao = Pessoa("Joao", "joao@email.com", "98888-8888")` <br> `escreva joao.nome`<br>`joao.telefone:="99999-9999"`      |
+| Python    | ``      | ``      |
+| Java      | ``      | ``      |
+| Scala     | ``      | ``      |
+
+
+### Classe
+
+| Linguagem | Definição | Uso |
+|-----------|---------|---------|
+| Potigol   | `tipo Pessoa` <br> ` nome, email: Texto` <br> `var telefone: Texto` <br>`  ligar()` <br> `    escreva "ligando para {telenone}"` <br> `  fim` <br> `fim` | `joao = Pessoa("Joao", "joao@email.com", "98888-8888")` <br> `escreva joao.nome`<br>`joao.telefone:="99999-9999"` <br> `joao.ligar`      |
+| Python    | ``      | ``      |
+| Java      | ``      | ``      |
+| Scala     | ``      | ``      |
+
 
