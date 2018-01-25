@@ -18,4 +18,40 @@ Comparação da linguagem **Potigol** com outras linguagens.
 | Potigol | `$ potigol programa.poti` |
 | Python  | `$ python programa.py` |
 | Java    | `$ javac Programa.java`<br>`$ java Programa` |
-| Scala   | `$ scalac programa.scala`<br>`$ scala programa` |
+| Scala   | `$ scalac programa.scala`<br>`$ scala programa` <br>*ou*<br> `$ scala programa.scala` |
+
+### Gramática
+
+| Linguagem | Blocos | Separador de comandos | Comentário de linha |
+| --- | --- | --- | --- |
+| Potigol | `faça fim` | *espaço* | `# comentário` |
+| Python  | `:` *e identação* | *nova linha ou* `;` | `# comentário` |
+| Java    | `{ }` | `;` | `// comentário` |
+| Scala   | `{ }` | *nova linha ou* `;` | `// comentário` |
+
+### Variáveis
+
+| Linguagem | Variável | Constante |  |
+| --- | --- | --- | --- |
+| Potigol | `var x := 10` <br> `var y, z := 20, 30` | `x = 10` <br> `y, z = 20, 30` | `` |
+| Python  | `x = 10` <br> `y, z = 20, 30` | `PI = 3.14` | `` |
+| Java    | `int x = 10;` | `final int x = 10;` | `` |
+| Scala   | `var x = 10` <br> `var y, z = 20, 30` <br> *declaração explícita do tipo:* <br>`var x: Int = 10`| `val x = 10` <br> `val y, z = 20, 30` | `` |
+
+#### Atribuição
+
+| Linguagem | Atribuição | Atribuição Paralela | Permutação |
+| --- | --- | --- | --- |
+| Potigol | `x := 10` | `x, y, z := 10, 20, 30` | `x, y := y, x` |
+| Python  | `x = 10` | `x, y, z = 10, 20, 30` | `x, y = y, x` |
+| Java    | `x = 10;` | *não tem* | *não tem* |
+| Scala   | `x = 10` | *não tem* | *não tem* |
+
+### Modelo
+
+| Linguagem | Comando | Comando | Comando |
+| --- | --- | --- | --- |
+| Potigol | `` | `` | `` |
+| Python  | `` | `` | `` |
+| Java    | `` | `` | `` |
+| Scala   | `` | `` | `` |
